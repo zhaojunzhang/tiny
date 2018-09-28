@@ -30,6 +30,12 @@ public class AdminUserDao {
     public List<AdminUser> queryByCondition(AdminUserQueryCondition condition){
         AdminUserExample example = buildAdminUserExample(condition);
        return adminUserMapper.selectByExample(example);
+
+
+
+
+
+
     }
 
     private AdminUserExample buildAdminUserExample(AdminUserQueryCondition condition){

@@ -58,13 +58,12 @@
         <!-- 指定数据库表 -->
         <!--<table tableName="teacher_message_relational" domainObjectName="TeacherMessageRelational"/>-->
         <!--tableName是表名， domainObjectName是实体类的名-->
-        <table tableName="admin" domainObjectName="adminUser1">
-        </table>
-        <!--<table tableName="user" domainObjectName="User" />-->
-        <!--<table tableName="teacher_downgrade_lock" domainObjectName="TeacherDowngradeLock"/>-->
-        <!--<table tableName="cms_element_attr" domainObjectName="ElementAttr"/>-->
-        <!--<table tableName="teacher_token" domainObjectName="TeacherToken"/>-->
-        <!--<table tableName="operation_log" domainObjectName="OperationLog"/>-->
+        <table tableName="admin" domainObjectName="adminUser" />
+        <table tableName="goods" domainObjectName="Goods" />
+        <table tableName="order" domainObjectName="Order"/>
+        <table tableName="order_detail" domainObjectName="OrderDetail"/>
+        <table tableName="wechat_user" domainObjectName="WechatUser"/>
+        <table tableName="category" domainObjectName="Category"/>
 
 
     </context>
