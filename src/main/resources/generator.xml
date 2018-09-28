@@ -58,7 +58,7 @@
         <!-- 指定数据库表 -->
         <!--<table tableName="teacher_message_relational" domainObjectName="TeacherMessageRelational"/>-->
         <!--tableName是表名， domainObjectName是实体类的名-->
-        <table tableName="admin" domainObjectName="adminUser" />
+        <table tableName="admin" domainObjectName="AdminUser" />
         <table tableName="goods" domainObjectName="Goods" />
         <table tableName="order" domainObjectName="Order"/>
         <table tableName="order_detail" domainObjectName="OrderDetail"/>
