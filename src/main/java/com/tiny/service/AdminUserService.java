@@ -7,11 +7,13 @@ import com.tiny.entity.AdminUser;
 import org.apache.commons.collections4.CollectionUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 
 /**
  * @author by zhangzhaojun on 2018/9/28.
  */
 @Service
+@Transactional
 public class AdminUserService {
 
     @Autowired
@@ -26,4 +28,5 @@ public class AdminUserService {
         }
         return adminUsers.get(0);
     }
+
 }

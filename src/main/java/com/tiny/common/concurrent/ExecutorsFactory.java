@@ -10,7 +10,7 @@ public class ExecutorsFactory {
     //队列默认长度
     private final static int DEFAULT_CAPACITY = 20;
     //CPU个数
-    public final static int CPU_SIZE = Runtime.getRuntime().availableProcessors();
+    private final static int CPU_SIZE = Runtime.getRuntime().availableProcessors();
     //默认最大任务处理线程数
     private final static int DEFAULT_MAX_POOL_SIZE = CPU_SIZE * 2 + 1;
     //默认最小任务处理线程数

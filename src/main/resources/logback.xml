@@ -71,6 +71,7 @@
     <root level="info">
         ${logback.console.out}
         <appender-ref ref="FILE"/>
-        <appender-ref ref="vipkid-tiny-error"/>
+        <appender-ref ref="STDOUT"/>
+        <appender-ref ref="tiny-error"/>
     </root>
 </configuration>

@@ -1,0 +1,836 @@
+2018-09-29/14:36:29.927||||^_^|[main] ERROR org.springframework.boot.SpringApplication 863 - Application run failed
+java.lang.IllegalStateException: Logback configuration error detected: 
+ERROR in ch.qos.logback.core.joran.action.AppenderRefAction - Could not find an appender named [vipkid-tiny-error]. Did you define it below instead of above in the configuration file?
+ERROR in ch.qos.logback.core.joran.action.AppenderRefAction - See http://logback.qos.ch/codes.html#appender_order for more details.
+	at org.springframework.boot.logging.logback.LogbackLoggingSystem.loadConfiguration(LogbackLoggingSystem.java:169)
+	at org.springframework.boot.logging.logback.LogbackLoggingSystem.reinitialize(LogbackLoggingSystem.java:224)
+	at org.springframework.boot.logging.AbstractLoggingSystem.initializeWithConventions(AbstractLoggingSystem.java:75)
+	at org.springframework.boot.logging.AbstractLoggingSystem.initialize(AbstractLoggingSystem.java:60)
+	at org.springframework.boot.logging.logback.LogbackLoggingSystem.initialize(LogbackLoggingSystem.java:117)
+	at org.springframework.boot.context.logging.LoggingApplicationListener.initializeSystem(LoggingApplicationListener.java:264)
+	at org.springframework.boot.context.logging.LoggingApplicationListener.initialize(LoggingApplicationListener.java:237)
+	at org.springframework.boot.context.logging.LoggingApplicationListener.onApplicationEnvironmentPreparedEvent(LoggingApplicationListener.java:200)
+	at org.springframework.boot.context.logging.LoggingApplicationListener.onApplicationEvent(LoggingApplicationListener.java:173)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.doInvokeListener(SimpleApplicationEventMulticaster.java:172)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.invokeListener(SimpleApplicationEventMulticaster.java:165)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:139)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:127)
+	at org.springframework.boot.context.event.EventPublishingRunListener.environmentPrepared(EventPublishingRunListener.java:74)
+	at org.springframework.boot.SpringApplicationRunListeners.environmentPrepared(SpringApplicationRunListeners.java:54)
+	at org.springframework.boot.SpringApplication.prepareEnvironment(SpringApplication.java:364)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:323)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1277)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1265)
+	at com.tiny.TinyApplication.main(TinyApplication.java:10)
+2018-09-29/14:37:33.160||||^_^|[main] INFO  com.tiny.TinyApplication 50 - Starting TinyApplication on K-StudiodeMacBook-Pro.local with PID 17942 (/Users/admin/IdeaProjects/tiny/target/classes started by admin in /Users/admin/IdeaProjects/tiny)
+2018-09-29/14:37:33.170||||^_^|[main] INFO  com.tiny.TinyApplication 680 - No active profile set, falling back to default profiles: default
+2018-09-29/14:37:33.214||||^_^|[main] INFO  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext 590 - Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@14dd9eb7: startup date [Sat Sep 29 14:37:33 CST 2018]; root of context hierarchy
+2018-09-29/14:37:33.884||||^_^|[main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner 166 - No MyBatis mapper was found in '[com.tiny]' package. Please check your configuration.
+2018-09-29/14:37:34.220||||^_^|[main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker 326 - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$203cae04] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-09-29/14:37:34.681||||^_^|[main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer 91 - Tomcat initialized with port(s): 8080 (http)
+2018-09-29/14:37:34.702||||^_^|[main] INFO  org.apache.coyote.http11.Http11NioProtocol 180 - Initializing ProtocolHandler ["http-nio-8080"]
+2018-09-29/14:37:34.714||||^_^|[main] INFO  org.apache.catalina.core.StandardService 180 - Starting service [Tomcat]
+2018-09-29/14:37:34.714||||^_^|[main] INFO  org.apache.catalina.core.StandardEngine 180 - Starting Servlet Engine: Apache Tomcat/8.5.34
+2018-09-29/14:37:34.718||||^_^|[localhost-startStop-1] INFO  org.apache.catalina.core.AprLifecycleListener 180 - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [/Users/admin/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.]
+2018-09-29/14:37:34.810||||^_^|[localhost-startStop-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] 180 - Initializing Spring embedded WebApplicationContext
+2018-09-29/14:37:34.810||||^_^|[localhost-startStop-1] INFO  org.springframework.web.context.ContextLoader 285 - Root WebApplicationContext: initialization completed in 1596 ms
+2018-09-29/14:37:34.857||||^_^|[localhost-startStop-1] INFO  o.s.boot.web.servlet.ServletRegistrationBean 187 - Servlet dispatcherServlet mapped to [/]
+2018-09-29/14:37:34.860||||^_^|[localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean 245 - Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-09-29/14:37:34.861||||^_^|[localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean 245 - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-09-29/14:37:34.861||||^_^|[localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean 245 - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-09-29/14:37:34.861||||^_^|[localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean 245 - Mapping filter: 'requestContextFilter' to: [/*]
+2018-09-29/14:37:34.893||||^_^|[main] WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext 558 - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'redisTemplate' defined in class path resource [org/springframework/boot/autoconfigure/data/redis/RedisAutoConfiguration.class]: Unsatisfied dependency expressed through method 'redisTemplate' parameter 0; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'org.springframework.data.redis.connection.RedisConnectionFactory' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {}
+2018-09-29/14:37:34.895||||^_^|[main] INFO  org.apache.catalina.core.StandardService 180 - Stopping service [Tomcat]
+2018-09-29/14:37:34.904||||^_^|[localhost-startStop-1] WARN  org.apache.catalina.loader.WebappClassLoaderBase 180 - The web application [ROOT] appears to have started a thread named [Abandoned connection cleanup thread] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.lang.Object.wait(Native Method)
+ java.lang.ref.ReferenceQueue.remove(ReferenceQueue.java:143)
+ com.mysql.jdbc.AbandonedConnectionCleanupThread.run(AbandonedConnectionCleanupThread.java:43)
+2018-09-29/14:37:34.917||||^_^|[main] INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener 101 - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2018-09-29/14:37:35.025||||^_^|[main] ERROR o.s.b.diagnostics.LoggingFailureAnalysisReporter 42 - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Parameter 0 of method redisTemplate in org.springframework.boot.autoconfigure.data.redis.RedisAutoConfiguration required a bean of type 'org.springframework.data.redis.connection.RedisConnectionFactory' that could not be found.
+	- Bean method 'redisConnectionFactory' not loaded because @ConditionalOnClass did not find required classes 'org.apache.commons.pool2.impl.GenericObjectPool', 'redis.clients.jedis.Jedis'
+	- Bean method 'redisConnectionFactory' not loaded because @ConditionalOnClass did not find required class 'io.lettuce.core.RedisClient'
+
+
+Action:
+
+Consider revisiting the entries above or defining a bean of type 'org.springframework.data.redis.connection.RedisConnectionFactory' in your configuration.
+
+2018-09-29/14:37:47.480||||^_^|[main] INFO  com.tiny.TinyApplication 50 - Starting TinyApplication on K-StudiodeMacBook-Pro.local with PID 17976 (/Users/admin/IdeaProjects/tiny/target/classes started by admin in /Users/admin/IdeaProjects/tiny)
+2018-09-29/14:37:47.485||||^_^|[main] INFO  com.tiny.TinyApplication 680 - No active profile set, falling back to default profiles: default
+2018-09-29/14:37:47.534||||^_^|[main] INFO  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext 590 - Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@32eff876: startup date [Sat Sep 29 14:37:47 CST 2018]; root of context hierarchy
+2018-09-29/14:37:48.105||||^_^|[main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner 166 - No MyBatis mapper was found in '[com.tiny]' package. Please check your configuration.
+2018-09-29/14:37:48.320||||^_^|[main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker 326 - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$e6fb6074] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-09-29/14:37:48.566||||^_^|[main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer 91 - Tomcat initialized with port(s): 8080 (http)
+2018-09-29/14:37:48.575||||^_^|[main] INFO  org.apache.coyote.http11.Http11NioProtocol 180 - Initializing ProtocolHandler ["http-nio-8080"]
+2018-09-29/14:37:48.583||||^_^|[main] INFO  org.apache.catalina.core.StandardService 180 - Starting service [Tomcat]
+2018-09-29/14:37:48.584||||^_^|[main] INFO  org.apache.catalina.core.StandardEngine 180 - Starting Servlet Engine: Apache Tomcat/8.5.34
+2018-09-29/14:37:48.587||||^_^|[localhost-startStop-1] INFO  org.apache.catalina.core.AprLifecycleListener 180 - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [/Users/admin/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.]
+2018-09-29/14:37:48.635||||^_^|[localhost-startStop-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] 180 - Initializing Spring embedded WebApplicationContext
+2018-09-29/14:37:48.635||||^_^|[localhost-startStop-1] INFO  org.springframework.web.context.ContextLoader 285 - Root WebApplicationContext: initialization completed in 1101 ms
+2018-09-29/14:37:48.671||||^_^|[localhost-startStop-1] INFO  o.s.boot.web.servlet.ServletRegistrationBean 187 - Servlet dispatcherServlet mapped to [/]
+2018-09-29/14:37:48.674||||^_^|[localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean 245 - Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-09-29/14:37:48.674||||^_^|[localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean 245 - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-09-29/14:37:48.675||||^_^|[localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean 245 - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-09-29/14:37:48.675||||^_^|[localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean 245 - Mapping filter: 'requestContextFilter' to: [/*]
+2018-09-29/14:37:48.696||||^_^|[main] WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext 558 - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'redisTemplate' defined in class path resource [org/springframework/boot/autoconfigure/data/redis/RedisAutoConfiguration.class]: Unsatisfied dependency expressed through method 'redisTemplate' parameter 0; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'org.springframework.data.redis.connection.RedisConnectionFactory' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {}
+2018-09-29/14:37:48.698||||^_^|[main] INFO  org.apache.catalina.core.StandardService 180 - Stopping service [Tomcat]
+2018-09-29/14:37:48.702||||^_^|[localhost-startStop-1] WARN  org.apache.catalina.loader.WebappClassLoaderBase 180 - The web application [ROOT] appears to have started a thread named [Abandoned connection cleanup thread] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.lang.Object.wait(Native Method)
+ java.lang.ref.ReferenceQueue.remove(ReferenceQueue.java:143)
+ com.mysql.jdbc.AbandonedConnectionCleanupThread.run(AbandonedConnectionCleanupThread.java:43)
+2018-09-29/14:37:48.709||||^_^|[main] INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener 101 - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2018-09-29/14:37:48.768||||^_^|[main] ERROR o.s.b.diagnostics.LoggingFailureAnalysisReporter 42 - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Parameter 0 of method redisTemplate in org.springframework.boot.autoconfigure.data.redis.RedisAutoConfiguration required a bean of type 'org.springframework.data.redis.connection.RedisConnectionFactory' that could not be found.
+	- Bean method 'redisConnectionFactory' not loaded because @ConditionalOnClass did not find required classes 'org.apache.commons.pool2.impl.GenericObjectPool', 'redis.clients.jedis.Jedis'
+	- Bean method 'redisConnectionFactory' not loaded because @ConditionalOnClass did not find required class 'io.lettuce.core.RedisClient'
+
+
+Action:
+
+Consider revisiting the entries above or defining a bean of type 'org.springframework.data.redis.connection.RedisConnectionFactory' in your configuration.
+
+2018-09-29/14:37:57.437||||^_^|[main] INFO  com.tiny.TinyApplication 50 - Starting TinyApplication on K-StudiodeMacBook-Pro.local with PID 17985 (/Users/admin/IdeaProjects/tiny/target/classes started by admin in /Users/admin/IdeaProjects/tiny)
+2018-09-29/14:37:57.441||||^_^|[main] INFO  com.tiny.TinyApplication 680 - No active profile set, falling back to default profiles: default
+2018-09-29/14:37:57.521||||^_^|[main] INFO  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext 590 - Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@31c7528f: startup date [Sat Sep 29 14:37:57 CST 2018]; root of context hierarchy
+2018-09-29/14:37:58.193||||^_^|[main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner 166 - No MyBatis mapper was found in '[com.tiny]' package. Please check your configuration.
+2018-09-29/14:37:58.473||||^_^|[main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker 326 - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$b1a21a65] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-09-29/14:37:58.794||||^_^|[main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer 91 - Tomcat initialized with port(s): 8080 (http)
+2018-09-29/14:37:58.805||||^_^|[main] INFO  org.apache.coyote.http11.Http11NioProtocol 180 - Initializing ProtocolHandler ["http-nio-8080"]
+2018-09-29/14:37:58.814||||^_^|[main] INFO  org.apache.catalina.core.StandardService 180 - Starting service [Tomcat]
+2018-09-29/14:37:58.814||||^_^|[main] INFO  org.apache.catalina.core.StandardEngine 180 - Starting Servlet Engine: Apache Tomcat/8.5.34
+2018-09-29/14:37:58.818||||^_^|[localhost-startStop-1] INFO  org.apache.catalina.core.AprLifecycleListener 180 - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [/Users/admin/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.]
+2018-09-29/14:37:58.883||||^_^|[localhost-startStop-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] 180 - Initializing Spring embedded WebApplicationContext
+2018-09-29/14:37:58.884||||^_^|[localhost-startStop-1] INFO  org.springframework.web.context.ContextLoader 285 - Root WebApplicationContext: initialization completed in 1363 ms
+2018-09-29/14:37:58.935||||^_^|[localhost-startStop-1] INFO  o.s.boot.web.servlet.ServletRegistrationBean 187 - Servlet dispatcherServlet mapped to [/]
+2018-09-29/14:37:58.939||||^_^|[localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean 245 - Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-09-29/14:37:58.939||||^_^|[localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean 245 - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-09-29/14:37:58.939||||^_^|[localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean 245 - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-09-29/14:37:58.939||||^_^|[localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean 245 - Mapping filter: 'requestContextFilter' to: [/*]
+2018-09-29/14:37:58.968||||^_^|[main] WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext 558 - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'redisTemplate' defined in class path resource [org/springframework/boot/autoconfigure/data/redis/RedisAutoConfiguration.class]: Unsatisfied dependency expressed through method 'redisTemplate' parameter 0; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'org.springframework.data.redis.connection.RedisConnectionFactory' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {}
+2018-09-29/14:37:58.971||||^_^|[main] INFO  org.apache.catalina.core.StandardService 180 - Stopping service [Tomcat]
+2018-09-29/14:37:58.981||||^_^|[localhost-startStop-1] WARN  org.apache.catalina.loader.WebappClassLoaderBase 180 - The web application [ROOT] appears to have started a thread named [Abandoned connection cleanup thread] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.lang.Object.wait(Native Method)
+ java.lang.ref.ReferenceQueue.remove(ReferenceQueue.java:143)
+ com.mysql.jdbc.AbandonedConnectionCleanupThread.run(AbandonedConnectionCleanupThread.java:43)
+2018-09-29/14:37:58.990||||^_^|[main] INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener 101 - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2018-09-29/14:37:59.073||||^_^|[main] ERROR o.s.b.diagnostics.LoggingFailureAnalysisReporter 42 - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Parameter 0 of method redisTemplate in org.springframework.boot.autoconfigure.data.redis.RedisAutoConfiguration required a bean of type 'org.springframework.data.redis.connection.RedisConnectionFactory' that could not be found.
+	- Bean method 'redisConnectionFactory' not loaded because @ConditionalOnClass did not find required classes 'org.apache.commons.pool2.impl.GenericObjectPool', 'redis.clients.jedis.Jedis'
+	- Bean method 'redisConnectionFactory' not loaded because @ConditionalOnClass did not find required class 'io.lettuce.core.RedisClient'
+
+
+Action:
+
+Consider revisiting the entries above or defining a bean of type 'org.springframework.data.redis.connection.RedisConnectionFactory' in your configuration.
+
+2018-09-29/14:38:30.472||||^_^|[main] INFO  com.tiny.TinyApplication 50 - Starting TinyApplication on K-StudiodeMacBook-Pro.local with PID 17994 (/Users/admin/IdeaProjects/tiny/target/classes started by admin in /Users/admin/IdeaProjects/tiny)
+2018-09-29/14:38:30.475||||^_^|[main] INFO  com.tiny.TinyApplication 680 - No active profile set, falling back to default profiles: default
+2018-09-29/14:38:30.529||||^_^|[main] INFO  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext 590 - Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@14dd9eb7: startup date [Sat Sep 29 14:38:30 CST 2018]; root of context hierarchy
+2018-09-29/14:38:31.113||||^_^|[main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner 166 - No MyBatis mapper was found in '[com.tiny]' package. Please check your configuration.
+2018-09-29/14:38:31.476||||^_^|[main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker 326 - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$d25659be] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-09-29/14:38:32.012||||^_^|[main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer 91 - Tomcat initialized with port(s): 8080 (http)
+2018-09-29/14:38:32.030||||^_^|[main] INFO  org.apache.coyote.http11.Http11NioProtocol 180 - Initializing ProtocolHandler ["http-nio-8080"]
+2018-09-29/14:38:32.038||||^_^|[main] INFO  org.apache.catalina.core.StandardService 180 - Starting service [Tomcat]
+2018-09-29/14:38:32.038||||^_^|[main] INFO  org.apache.catalina.core.StandardEngine 180 - Starting Servlet Engine: Apache Tomcat/8.5.34
+2018-09-29/14:38:32.042||||^_^|[localhost-startStop-1] INFO  org.apache.catalina.core.AprLifecycleListener 180 - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [/Users/admin/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.]
+2018-09-29/14:38:32.129||||^_^|[localhost-startStop-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] 180 - Initializing Spring embedded WebApplicationContext
+2018-09-29/14:38:32.129||||^_^|[localhost-startStop-1] INFO  org.springframework.web.context.ContextLoader 285 - Root WebApplicationContext: initialization completed in 1601 ms
+2018-09-29/14:38:32.168||||^_^|[localhost-startStop-1] INFO  o.s.boot.web.servlet.ServletRegistrationBean 187 - Servlet dispatcherServlet mapped to [/]
+2018-09-29/14:38:32.171||||^_^|[localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean 245 - Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-09-29/14:38:32.171||||^_^|[localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean 245 - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-09-29/14:38:32.171||||^_^|[localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean 245 - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-09-29/14:38:32.171||||^_^|[localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean 245 - Mapping filter: 'requestContextFilter' to: [/*]
+2018-09-29/14:38:32.200||||^_^|[main] WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext 558 - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'redisTemplate' defined in class path resource [org/springframework/boot/autoconfigure/data/redis/RedisAutoConfiguration.class]: Unsatisfied dependency expressed through method 'redisTemplate' parameter 0; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'org.springframework.data.redis.connection.RedisConnectionFactory' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {}
+2018-09-29/14:38:32.201||||^_^|[main] INFO  org.apache.catalina.core.StandardService 180 - Stopping service [Tomcat]
+2018-09-29/14:38:32.209||||^_^|[localhost-startStop-1] WARN  org.apache.catalina.loader.WebappClassLoaderBase 180 - The web application [ROOT] appears to have started a thread named [Abandoned connection cleanup thread] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.lang.Object.wait(Native Method)
+ java.lang.ref.ReferenceQueue.remove(ReferenceQueue.java:143)
+ com.mysql.jdbc.AbandonedConnectionCleanupThread.run(AbandonedConnectionCleanupThread.java:43)
+2018-09-29/14:38:32.217||||^_^|[main] INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener 101 - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2018-09-29/14:38:32.313||||^_^|[main] ERROR o.s.b.diagnostics.LoggingFailureAnalysisReporter 42 - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Parameter 0 of method redisTemplate in org.springframework.boot.autoconfigure.data.redis.RedisAutoConfiguration required a bean of type 'org.springframework.data.redis.connection.RedisConnectionFactory' that could not be found.
+	- Bean method 'redisConnectionFactory' not loaded because @ConditionalOnClass did not find required classes 'org.apache.commons.pool2.impl.GenericObjectPool', 'redis.clients.jedis.Jedis'
+	- Bean method 'redisConnectionFactory' not loaded because @ConditionalOnClass did not find required class 'io.lettuce.core.RedisClient'
+
+
+Action:
+
+Consider revisiting the entries above or defining a bean of type 'org.springframework.data.redis.connection.RedisConnectionFactory' in your configuration.
+
+2018-09-29/14:39:10.539||||^_^|[main] INFO  com.tiny.TinyApplication 50 - Starting TinyApplication on K-StudiodeMacBook-Pro.local with PID 18011 (/Users/admin/IdeaProjects/tiny/target/classes started by admin in /Users/admin/IdeaProjects/tiny)
+2018-09-29/14:39:10.558||||^_^|[main] INFO  com.tiny.TinyApplication 680 - No active profile set, falling back to default profiles: default
+2018-09-29/14:39:10.609||||^_^|[main] INFO  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext 590 - Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@561868a0: startup date [Sat Sep 29 14:39:10 CST 2018]; root of context hierarchy
+2018-09-29/14:39:11.616||||^_^|[main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner 166 - No MyBatis mapper was found in '[com.tiny]' package. Please check your configuration.
+2018-09-29/14:39:11.966||||^_^|[main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker 326 - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$234a6beb] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-09-29/14:39:12.414||||^_^|[main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer 91 - Tomcat initialized with port(s): 8080 (http)
+2018-09-29/14:39:12.434||||^_^|[main] INFO  org.apache.coyote.http11.Http11NioProtocol 180 - Initializing ProtocolHandler ["http-nio-8080"]
+2018-09-29/14:39:12.447||||^_^|[main] INFO  org.apache.catalina.core.StandardService 180 - Starting service [Tomcat]
+2018-09-29/14:39:12.448||||^_^|[main] INFO  org.apache.catalina.core.StandardEngine 180 - Starting Servlet Engine: Apache Tomcat/8.5.34
+2018-09-29/14:39:12.454||||^_^|[localhost-startStop-1] INFO  org.apache.catalina.core.AprLifecycleListener 180 - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [/Users/admin/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.]
+2018-09-29/14:39:12.557||||^_^|[localhost-startStop-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] 180 - Initializing Spring embedded WebApplicationContext
+2018-09-29/14:39:12.558||||^_^|[localhost-startStop-1] INFO  org.springframework.web.context.ContextLoader 285 - Root WebApplicationContext: initialization completed in 1949 ms
+2018-09-29/14:39:12.621||||^_^|[localhost-startStop-1] INFO  o.s.boot.web.servlet.ServletRegistrationBean 187 - Servlet dispatcherServlet mapped to [/]
+2018-09-29/14:39:12.627||||^_^|[localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean 245 - Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-09-29/14:39:12.628||||^_^|[localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean 245 - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-09-29/14:39:12.628||||^_^|[localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean 245 - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-09-29/14:39:12.628||||^_^|[localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean 245 - Mapping filter: 'requestContextFilter' to: [/*]
+2018-09-29/14:39:12.673||||^_^|[main] WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext 558 - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'redisTemplate' defined in class path resource [org/springframework/boot/autoconfigure/data/redis/RedisAutoConfiguration.class]: Unsatisfied dependency expressed through method 'redisTemplate' parameter 0; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'org.springframework.data.redis.connection.RedisConnectionFactory' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {}
+2018-09-29/14:39:12.676||||^_^|[main] INFO  org.apache.catalina.core.StandardService 180 - Stopping service [Tomcat]
+2018-09-29/14:39:12.684||||^_^|[localhost-startStop-1] WARN  org.apache.catalina.loader.WebappClassLoaderBase 180 - The web application [ROOT] appears to have started a thread named [Abandoned connection cleanup thread] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.lang.Object.wait(Native Method)
+ java.lang.ref.ReferenceQueue.remove(ReferenceQueue.java:143)
+ com.mysql.jdbc.AbandonedConnectionCleanupThread.run(AbandonedConnectionCleanupThread.java:43)
+2018-09-29/14:39:12.692||||^_^|[main] INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener 101 - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2018-09-29/14:39:12.808||||^_^|[main] ERROR o.s.b.diagnostics.LoggingFailureAnalysisReporter 42 - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Parameter 0 of method redisTemplate in org.springframework.boot.autoconfigure.data.redis.RedisAutoConfiguration required a bean of type 'org.springframework.data.redis.connection.RedisConnectionFactory' that could not be found.
+	- Bean method 'redisConnectionFactory' not loaded because @ConditionalOnClass did not find required classes 'org.apache.commons.pool2.impl.GenericObjectPool', 'redis.clients.jedis.Jedis'
+	- Bean method 'redisConnectionFactory' not loaded because @ConditionalOnClass did not find required class 'io.lettuce.core.RedisClient'
+
+
+Action:
+
+Consider revisiting the entries above or defining a bean of type 'org.springframework.data.redis.connection.RedisConnectionFactory' in your configuration.
+
+2018-09-29/15:00:54.549||||^_^|[main] INFO  com.tiny.TinyApplication 50 - Starting TinyApplication on K-StudiodeMacBook-Pro.local with PID 861 (/Users/admin/IdeaProjects/tiny/target/classes started by admin in /Users/admin/IdeaProjects/tiny)
+2018-09-29/15:00:54.563||||^_^|[main] INFO  com.tiny.TinyApplication 680 - No active profile set, falling back to default profiles: default
+2018-09-29/15:00:54.715||||^_^|[main] INFO  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext 590 - Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@14dd9eb7: startup date [Sat Sep 29 15:00:54 CST 2018]; root of context hierarchy
+2018-09-29/15:00:55.490||||^_^|[main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner 166 - No MyBatis mapper was found in '[com.tiny]' package. Please check your configuration.
+2018-09-29/15:00:55.903||||^_^|[main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker 326 - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$fbb6a845] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-09-29/15:00:56.414||||^_^|[main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer 91 - Tomcat initialized with port(s): 8080 (http)
+2018-09-29/15:00:56.432||||^_^|[main] INFO  org.apache.coyote.http11.Http11NioProtocol 180 - Initializing ProtocolHandler ["http-nio-8080"]
+2018-09-29/15:00:56.442||||^_^|[main] INFO  org.apache.catalina.core.StandardService 180 - Starting service [Tomcat]
+2018-09-29/15:00:56.443||||^_^|[main] INFO  org.apache.catalina.core.StandardEngine 180 - Starting Servlet Engine: Apache Tomcat/8.5.34
+2018-09-29/15:00:56.447||||^_^|[localhost-startStop-1] INFO  org.apache.catalina.core.AprLifecycleListener 180 - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [/Users/admin/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.]
+2018-09-29/15:00:56.543||||^_^|[localhost-startStop-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] 180 - Initializing Spring embedded WebApplicationContext
+2018-09-29/15:00:56.543||||^_^|[localhost-startStop-1] INFO  org.springframework.web.context.ContextLoader 285 - Root WebApplicationContext: initialization completed in 1828 ms
+2018-09-29/15:00:56.586||||^_^|[localhost-startStop-1] INFO  o.s.boot.web.servlet.ServletRegistrationBean 187 - Servlet dispatcherServlet mapped to [/]
+2018-09-29/15:00:56.590||||^_^|[localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean 245 - Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-09-29/15:00:56.590||||^_^|[localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean 245 - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-09-29/15:00:56.590||||^_^|[localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean 245 - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-09-29/15:00:56.590||||^_^|[localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean 245 - Mapping filter: 'requestContextFilter' to: [/*]
+2018-09-29/15:00:56.622||||^_^|[main] WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext 558 - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'redisTemplate' defined in class path resource [org/springframework/boot/autoconfigure/data/redis/RedisAutoConfiguration.class]: Unsatisfied dependency expressed through method 'redisTemplate' parameter 0; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'org.springframework.data.redis.connection.RedisConnectionFactory' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {}
+2018-09-29/15:00:56.624||||^_^|[main] INFO  org.apache.catalina.core.StandardService 180 - Stopping service [Tomcat]
+2018-09-29/15:00:56.634||||^_^|[localhost-startStop-1] WARN  org.apache.catalina.loader.WebappClassLoaderBase 180 - The web application [ROOT] appears to have started a thread named [Abandoned connection cleanup thread] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.lang.Object.wait(Native Method)
+ java.lang.ref.ReferenceQueue.remove(ReferenceQueue.java:143)
+ com.mysql.jdbc.AbandonedConnectionCleanupThread.run(AbandonedConnectionCleanupThread.java:43)
+2018-09-29/15:00:56.643||||^_^|[main] INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener 101 - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2018-09-29/15:00:56.731||||^_^|[main] ERROR o.s.b.diagnostics.LoggingFailureAnalysisReporter 42 - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Parameter 0 of method redisTemplate in org.springframework.boot.autoconfigure.data.redis.RedisAutoConfiguration required a bean of type 'org.springframework.data.redis.connection.RedisConnectionFactory' that could not be found.
+	- Bean method 'redisConnectionFactory' not loaded because @ConditionalOnClass did not find required classes 'org.apache.commons.pool2.impl.GenericObjectPool', 'redis.clients.jedis.Jedis'
+	- Bean method 'redisConnectionFactory' not loaded because @ConditionalOnClass did not find required class 'io.lettuce.core.RedisClient'
+
+
+Action:
+
+Consider revisiting the entries above or defining a bean of type 'org.springframework.data.redis.connection.RedisConnectionFactory' in your configuration.
+
+2018-09-29/15:01:18.922||||^_^|[main] INFO  com.tiny.TinyApplication 50 - Starting TinyApplication on K-StudiodeMacBook-Pro.local with PID 871 (/Users/admin/IdeaProjects/tiny/target/classes started by admin in /Users/admin/IdeaProjects/tiny)
+2018-09-29/15:01:18.925||||^_^|[main] INFO  com.tiny.TinyApplication 680 - No active profile set, falling back to default profiles: default
+2018-09-29/15:01:19.144||||^_^|[main] INFO  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext 590 - Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@14dd9eb7: startup date [Sat Sep 29 15:01:19 CST 2018]; root of context hierarchy
+2018-09-29/15:01:19.720||||^_^|[main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner 166 - No MyBatis mapper was found in '[com.tiny]' package. Please check your configuration.
+2018-09-29/15:01:19.930||||^_^|[main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker 326 - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$cef219b4] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-09-29/15:01:20.187||||^_^|[main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer 91 - Tomcat initialized with port(s): 8080 (http)
+2018-09-29/15:01:20.197||||^_^|[main] INFO  org.apache.coyote.http11.Http11NioProtocol 180 - Initializing ProtocolHandler ["http-nio-8080"]
+2018-09-29/15:01:20.205||||^_^|[main] INFO  org.apache.catalina.core.StandardService 180 - Starting service [Tomcat]
+2018-09-29/15:01:20.206||||^_^|[main] INFO  org.apache.catalina.core.StandardEngine 180 - Starting Servlet Engine: Apache Tomcat/8.5.34
+2018-09-29/15:01:20.208||||^_^|[localhost-startStop-1] INFO  org.apache.catalina.core.AprLifecycleListener 180 - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [/Users/admin/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.]
+2018-09-29/15:01:20.256||||^_^|[localhost-startStop-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] 180 - Initializing Spring embedded WebApplicationContext
+2018-09-29/15:01:20.256||||^_^|[localhost-startStop-1] INFO  org.springframework.web.context.ContextLoader 285 - Root WebApplicationContext: initialization completed in 1113 ms
+2018-09-29/15:01:20.294||||^_^|[localhost-startStop-1] INFO  o.s.boot.web.servlet.ServletRegistrationBean 187 - Servlet dispatcherServlet mapped to [/]
+2018-09-29/15:01:20.297||||^_^|[localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean 245 - Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-09-29/15:01:20.297||||^_^|[localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean 245 - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-09-29/15:01:20.297||||^_^|[localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean 245 - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-09-29/15:01:20.297||||^_^|[localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean 245 - Mapping filter: 'requestContextFilter' to: [/*]
+2018-09-29/15:01:20.317||||^_^|[main] WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext 558 - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'redisTemplate' defined in class path resource [org/springframework/boot/autoconfigure/data/redis/RedisAutoConfiguration.class]: Unsatisfied dependency expressed through method 'redisTemplate' parameter 0; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'org.springframework.data.redis.connection.RedisConnectionFactory' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {}
+2018-09-29/15:01:20.319||||^_^|[main] INFO  org.apache.catalina.core.StandardService 180 - Stopping service [Tomcat]
+2018-09-29/15:01:20.323||||^_^|[localhost-startStop-1] WARN  org.apache.catalina.loader.WebappClassLoaderBase 180 - The web application [ROOT] appears to have started a thread named [Abandoned connection cleanup thread] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.lang.Object.wait(Native Method)
+ java.lang.ref.ReferenceQueue.remove(ReferenceQueue.java:143)
+ com.mysql.jdbc.AbandonedConnectionCleanupThread.run(AbandonedConnectionCleanupThread.java:43)
+2018-09-29/15:01:20.331||||^_^|[main] INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener 101 - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2018-09-29/15:01:20.390||||^_^|[main] ERROR o.s.b.diagnostics.LoggingFailureAnalysisReporter 42 - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Parameter 0 of method redisTemplate in org.springframework.boot.autoconfigure.data.redis.RedisAutoConfiguration required a bean of type 'org.springframework.data.redis.connection.RedisConnectionFactory' that could not be found.
+	- Bean method 'redisConnectionFactory' not loaded because @ConditionalOnClass did not find required classes 'org.apache.commons.pool2.impl.GenericObjectPool', 'redis.clients.jedis.Jedis'
+	- Bean method 'redisConnectionFactory' not loaded because @ConditionalOnClass did not find required class 'io.lettuce.core.RedisClient'
+
+
+Action:
+
+Consider revisiting the entries above or defining a bean of type 'org.springframework.data.redis.connection.RedisConnectionFactory' in your configuration.
+
+2018-09-29/15:02:13.626||||^_^|[main] INFO  com.tiny.TinyApplication 50 - Starting TinyApplication on K-StudiodeMacBook-Pro.local with PID 876 (/Users/admin/IdeaProjects/tiny/target/classes started by admin in /Users/admin/IdeaProjects/tiny)
+2018-09-29/15:02:13.630||||^_^|[main] INFO  com.tiny.TinyApplication 680 - No active profile set, falling back to default profiles: default
+2018-09-29/15:02:13.671||||^_^|[main] INFO  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext 590 - Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@7582ff54: startup date [Sat Sep 29 15:02:13 CST 2018]; root of context hierarchy
+2018-09-29/15:02:14.176||||^_^|[main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner 166 - No MyBatis mapper was found in '[com.tiny]' package. Please check your configuration.
+2018-09-29/15:02:14.464||||^_^|[main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker 326 - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$eecdadf9] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-09-29/15:02:14.984||||^_^|[main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer 91 - Tomcat initialized with port(s): 8080 (http)
+2018-09-29/15:02:14.998||||^_^|[main] INFO  org.apache.coyote.http11.Http11NioProtocol 180 - Initializing ProtocolHandler ["http-nio-8080"]
+2018-09-29/15:02:15.006||||^_^|[main] INFO  org.apache.catalina.core.StandardService 180 - Starting service [Tomcat]
+2018-09-29/15:02:15.007||||^_^|[main] INFO  org.apache.catalina.core.StandardEngine 180 - Starting Servlet Engine: Apache Tomcat/8.5.34
+2018-09-29/15:02:15.010||||^_^|[localhost-startStop-1] INFO  org.apache.catalina.core.AprLifecycleListener 180 - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [/Users/admin/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.]
+2018-09-29/15:02:15.096||||^_^|[localhost-startStop-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] 180 - Initializing Spring embedded WebApplicationContext
+2018-09-29/15:02:15.097||||^_^|[localhost-startStop-1] INFO  org.springframework.web.context.ContextLoader 285 - Root WebApplicationContext: initialization completed in 1426 ms
+2018-09-29/15:02:15.151||||^_^|[localhost-startStop-1] INFO  o.s.boot.web.servlet.ServletRegistrationBean 187 - Servlet dispatcherServlet mapped to [/]
+2018-09-29/15:02:15.155||||^_^|[localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean 245 - Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-09-29/15:02:15.155||||^_^|[localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean 245 - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-09-29/15:02:15.155||||^_^|[localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean 245 - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-09-29/15:02:15.156||||^_^|[localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean 245 - Mapping filter: 'requestContextFilter' to: [/*]
+2018-09-29/15:02:15.185||||^_^|[main] WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext 558 - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'redisTemplate' defined in class path resource [org/springframework/boot/autoconfigure/data/redis/RedisAutoConfiguration.class]: Unsatisfied dependency expressed through method 'redisTemplate' parameter 0; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'org.springframework.data.redis.connection.RedisConnectionFactory' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {}
+2018-09-29/15:02:15.188||||^_^|[main] INFO  org.apache.catalina.core.StandardService 180 - Stopping service [Tomcat]
+2018-09-29/15:02:15.207||||^_^|[localhost-startStop-1] WARN  org.apache.catalina.loader.WebappClassLoaderBase 180 - The web application [ROOT] appears to have started a thread named [Abandoned connection cleanup thread] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.lang.Object.wait(Native Method)
+ java.lang.ref.ReferenceQueue.remove(ReferenceQueue.java:143)
+ com.mysql.jdbc.AbandonedConnectionCleanupThread.run(AbandonedConnectionCleanupThread.java:43)
+2018-09-29/15:02:15.218||||^_^|[main] INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener 101 - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2018-09-29/15:02:15.310||||^_^|[main] ERROR o.s.b.diagnostics.LoggingFailureAnalysisReporter 42 - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Parameter 0 of method redisTemplate in org.springframework.boot.autoconfigure.data.redis.RedisAutoConfiguration required a bean of type 'org.springframework.data.redis.connection.RedisConnectionFactory' that could not be found.
+	- Bean method 'redisConnectionFactory' not loaded because @ConditionalOnClass did not find required classes 'org.apache.commons.pool2.impl.GenericObjectPool', 'redis.clients.jedis.Jedis'
+	- Bean method 'redisConnectionFactory' not loaded because @ConditionalOnClass did not find required class 'io.lettuce.core.RedisClient'
+
+
+Action:
+
+Consider revisiting the entries above or defining a bean of type 'org.springframework.data.redis.connection.RedisConnectionFactory' in your configuration.
+
+2018-09-29/15:08:19.029||||^_^|[main] INFO  com.tiny.TinyApplication 50 - Starting TinyApplication on K-StudiodeMacBook-Pro.local with PID 1247 (/Users/admin/IdeaProjects/tiny/target/classes started by admin in /Users/admin/IdeaProjects/tiny)
+2018-09-29/15:08:19.032||||^_^|[main] INFO  com.tiny.TinyApplication 680 - No active profile set, falling back to default profiles: default
+2018-09-29/15:08:19.085||||^_^|[main] INFO  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext 590 - Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@52e6fdee: startup date [Sat Sep 29 15:08:19 CST 2018]; root of context hierarchy
+2018-09-29/15:08:19.787||||^_^|[main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner 166 - No MyBatis mapper was found in '[com.tiny]' package. Please check your configuration.
+2018-09-29/15:08:20.223||||^_^|[main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker 326 - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$f4859149] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-09-29/15:08:20.691||||^_^|[main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer 91 - Tomcat initialized with port(s): 8080 (http)
+2018-09-29/15:08:20.707||||^_^|[main] INFO  org.apache.coyote.http11.Http11NioProtocol 180 - Initializing ProtocolHandler ["http-nio-8080"]
+2018-09-29/15:08:20.717||||^_^|[main] INFO  org.apache.catalina.core.StandardService 180 - Starting service [Tomcat]
+2018-09-29/15:08:20.717||||^_^|[main] INFO  org.apache.catalina.core.StandardEngine 180 - Starting Servlet Engine: Apache Tomcat/8.5.34
+2018-09-29/15:08:20.731||||^_^|[localhost-startStop-1] INFO  org.apache.catalina.core.AprLifecycleListener 180 - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [/Users/admin/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.]
+2018-09-29/15:08:20.827||||^_^|[localhost-startStop-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] 180 - Initializing Spring embedded WebApplicationContext
+2018-09-29/15:08:20.828||||^_^|[localhost-startStop-1] INFO  org.springframework.web.context.ContextLoader 285 - Root WebApplicationContext: initialization completed in 1743 ms
+2018-09-29/15:08:20.868||||^_^|[localhost-startStop-1] INFO  o.s.boot.web.servlet.ServletRegistrationBean 187 - Servlet dispatcherServlet mapped to [/]
+2018-09-29/15:08:20.872||||^_^|[localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean 245 - Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-09-29/15:08:20.872||||^_^|[localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean 245 - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-09-29/15:08:20.872||||^_^|[localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean 245 - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-09-29/15:08:20.872||||^_^|[localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean 245 - Mapping filter: 'requestContextFilter' to: [/*]
+2018-09-29/15:08:20.903||||^_^|[main] WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext 558 - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'redisTemplate' defined in class path resource [org/springframework/boot/autoconfigure/data/redis/RedisAutoConfiguration.class]: Unsatisfied dependency expressed through method 'redisTemplate' parameter 0; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'org.springframework.data.redis.connection.RedisConnectionFactory' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {}
+2018-09-29/15:08:20.905||||^_^|[main] INFO  org.apache.catalina.core.StandardService 180 - Stopping service [Tomcat]
+2018-09-29/15:08:20.913||||^_^|[localhost-startStop-1] WARN  org.apache.catalina.loader.WebappClassLoaderBase 180 - The web application [ROOT] appears to have started a thread named [Abandoned connection cleanup thread] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.lang.Object.wait(Native Method)
+ java.lang.ref.ReferenceQueue.remove(ReferenceQueue.java:143)
+ com.mysql.jdbc.AbandonedConnectionCleanupThread.run(AbandonedConnectionCleanupThread.java:43)
+2018-09-29/15:08:20.919||||^_^|[main] INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener 101 - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2018-09-29/15:08:20.999||||^_^|[main] ERROR o.s.b.diagnostics.LoggingFailureAnalysisReporter 42 - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Parameter 0 of method redisTemplate in org.springframework.boot.autoconfigure.data.redis.RedisAutoConfiguration required a bean of type 'org.springframework.data.redis.connection.RedisConnectionFactory' that could not be found.
+	- Bean method 'redisConnectionFactory' not loaded because @ConditionalOnClass did not find required classes 'org.apache.commons.pool2.impl.GenericObjectPool', 'redis.clients.jedis.Jedis'
+	- Bean method 'redisConnectionFactory' not loaded because @ConditionalOnClass did not find required class 'io.lettuce.core.RedisClient'
+
+
+Action:
+
+Consider revisiting the entries above or defining a bean of type 'org.springframework.data.redis.connection.RedisConnectionFactory' in your configuration.
+
+2018-09-29/15:10:06.447||||^_^|[main] INFO  com.tiny.TinyApplication 50 - Starting TinyApplication on K-StudiodeMacBook-Pro.local with PID 1271 (/Users/admin/IdeaProjects/tiny/target/classes started by admin in /Users/admin/IdeaProjects/tiny)
+2018-09-29/15:10:06.458||||^_^|[main] INFO  com.tiny.TinyApplication 680 - No active profile set, falling back to default profiles: default
+2018-09-29/15:10:06.545||||^_^|[main] INFO  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext 590 - Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@14dd9eb7: startup date [Sat Sep 29 15:10:06 CST 2018]; root of context hierarchy
+2018-09-29/15:10:07.201||||^_^|[main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner 166 - No MyBatis mapper was found in '[com.tiny]' package. Please check your configuration.
+2018-09-29/15:10:07.481||||^_^|[main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker 326 - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$cef219b4] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-09-29/15:10:07.910||||^_^|[main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer 91 - Tomcat initialized with port(s): 8080 (http)
+2018-09-29/15:10:07.922||||^_^|[main] INFO  org.apache.coyote.http11.Http11NioProtocol 180 - Initializing ProtocolHandler ["http-nio-8080"]
+2018-09-29/15:10:07.928||||^_^|[main] INFO  org.apache.catalina.core.StandardService 180 - Starting service [Tomcat]
+2018-09-29/15:10:07.929||||^_^|[main] INFO  org.apache.catalina.core.StandardEngine 180 - Starting Servlet Engine: Apache Tomcat/8.5.34
+2018-09-29/15:10:07.932||||^_^|[localhost-startStop-1] INFO  org.apache.catalina.core.AprLifecycleListener 180 - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [/Users/admin/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.]
+2018-09-29/15:10:08.011||||^_^|[localhost-startStop-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] 180 - Initializing Spring embedded WebApplicationContext
+2018-09-29/15:10:08.011||||^_^|[localhost-startStop-1] INFO  org.springframework.web.context.ContextLoader 285 - Root WebApplicationContext: initialization completed in 1466 ms
+2018-09-29/15:10:08.053||||^_^|[localhost-startStop-1] INFO  o.s.boot.web.servlet.ServletRegistrationBean 187 - Servlet dispatcherServlet mapped to [/]
+2018-09-29/15:10:08.056||||^_^|[localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean 245 - Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-09-29/15:10:08.057||||^_^|[localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean 245 - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-09-29/15:10:08.057||||^_^|[localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean 245 - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-09-29/15:10:08.057||||^_^|[localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean 245 - Mapping filter: 'requestContextFilter' to: [/*]
+2018-09-29/15:10:08.094||||^_^|[main] WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext 558 - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'redisTemplate' defined in class path resource [org/springframework/boot/autoconfigure/data/redis/RedisAutoConfiguration.class]: Unsatisfied dependency expressed through method 'redisTemplate' parameter 0; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'org.springframework.data.redis.connection.RedisConnectionFactory' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {}
+2018-09-29/15:10:08.096||||^_^|[main] INFO  org.apache.catalina.core.StandardService 180 - Stopping service [Tomcat]
+2018-09-29/15:10:08.105||||^_^|[localhost-startStop-1] WARN  org.apache.catalina.loader.WebappClassLoaderBase 180 - The web application [ROOT] appears to have started a thread named [Abandoned connection cleanup thread] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.lang.Object.wait(Native Method)
+ java.lang.ref.ReferenceQueue.remove(ReferenceQueue.java:143)
+ com.mysql.jdbc.AbandonedConnectionCleanupThread.run(AbandonedConnectionCleanupThread.java:43)
+2018-09-29/15:10:08.113||||^_^|[main] INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener 101 - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2018-09-29/15:10:08.201||||^_^|[main] ERROR o.s.b.diagnostics.LoggingFailureAnalysisReporter 42 - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Parameter 0 of method redisTemplate in org.springframework.boot.autoconfigure.data.redis.RedisAutoConfiguration required a bean of type 'org.springframework.data.redis.connection.RedisConnectionFactory' that could not be found.
+	- Bean method 'redisConnectionFactory' not loaded because @ConditionalOnClass did not find required classes 'org.apache.commons.pool2.impl.GenericObjectPool', 'redis.clients.jedis.Jedis'
+	- Bean method 'redisConnectionFactory' not loaded because @ConditionalOnClass did not find required class 'io.lettuce.core.RedisClient'
+
+
+Action:
+
+Consider revisiting the entries above or defining a bean of type 'org.springframework.data.redis.connection.RedisConnectionFactory' in your configuration.
+
+2018-09-29/15:11:09.973||||^_^|[main] INFO  com.tiny.TinyApplication 50 - Starting TinyApplication on K-StudiodeMacBook-Pro.local with PID 1283 (/Users/admin/IdeaProjects/tiny/target/classes started by admin in /Users/admin/IdeaProjects/tiny)
+2018-09-29/15:11:09.977||||^_^|[main] INFO  com.tiny.TinyApplication 680 - No active profile set, falling back to default profiles: default
+2018-09-29/15:11:10.045||||^_^|[main] INFO  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext 590 - Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@42e99e4a: startup date [Sat Sep 29 15:11:10 CST 2018]; root of context hierarchy
+2018-09-29/15:11:10.682||||^_^|[main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner 166 - No MyBatis mapper was found in '[com.tiny]' package. Please check your configuration.
+2018-09-29/15:11:10.948||||^_^|[main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker 326 - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$379f0ab] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-09-29/15:11:11.296||||^_^|[main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer 91 - Tomcat initialized with port(s): 8080 (http)
+2018-09-29/15:11:11.312||||^_^|[main] INFO  org.apache.coyote.http11.Http11NioProtocol 180 - Initializing ProtocolHandler ["http-nio-8080"]
+2018-09-29/15:11:11.319||||^_^|[main] INFO  org.apache.catalina.core.StandardService 180 - Starting service [Tomcat]
+2018-09-29/15:11:11.320||||^_^|[main] INFO  org.apache.catalina.core.StandardEngine 180 - Starting Servlet Engine: Apache Tomcat/8.5.34
+2018-09-29/15:11:11.323||||^_^|[localhost-startStop-1] INFO  org.apache.catalina.core.AprLifecycleListener 180 - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [/Users/admin/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.]
+2018-09-29/15:11:11.401||||^_^|[localhost-startStop-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] 180 - Initializing Spring embedded WebApplicationContext
+2018-09-29/15:11:11.401||||^_^|[localhost-startStop-1] INFO  org.springframework.web.context.ContextLoader 285 - Root WebApplicationContext: initialization completed in 1356 ms
+2018-09-29/15:11:11.443||||^_^|[localhost-startStop-1] INFO  o.s.boot.web.servlet.ServletRegistrationBean 187 - Servlet dispatcherServlet mapped to [/]
+2018-09-29/15:11:11.446||||^_^|[localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean 245 - Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-09-29/15:11:11.447||||^_^|[localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean 245 - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-09-29/15:11:11.447||||^_^|[localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean 245 - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-09-29/15:11:11.447||||^_^|[localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean 245 - Mapping filter: 'requestContextFilter' to: [/*]
+2018-09-29/15:11:11.477||||^_^|[main] WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext 558 - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'redisTemplate' defined in class path resource [org/springframework/boot/autoconfigure/data/redis/RedisAutoConfiguration.class]: Unsatisfied dependency expressed through method 'redisTemplate' parameter 0; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'org.springframework.data.redis.connection.RedisConnectionFactory' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {}
+2018-09-29/15:11:11.479||||^_^|[main] INFO  org.apache.catalina.core.StandardService 180 - Stopping service [Tomcat]
+2018-09-29/15:11:11.486||||^_^|[localhost-startStop-1] WARN  org.apache.catalina.loader.WebappClassLoaderBase 180 - The web application [ROOT] appears to have started a thread named [Abandoned connection cleanup thread] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.lang.Object.wait(Native Method)
+ java.lang.ref.ReferenceQueue.remove(ReferenceQueue.java:143)
+ com.mysql.jdbc.AbandonedConnectionCleanupThread.run(AbandonedConnectionCleanupThread.java:43)
+2018-09-29/15:11:11.493||||^_^|[main] INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener 101 - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2018-09-29/15:11:11.575||||^_^|[main] ERROR o.s.b.diagnostics.LoggingFailureAnalysisReporter 42 - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Parameter 0 of method redisTemplate in org.springframework.boot.autoconfigure.data.redis.RedisAutoConfiguration required a bean of type 'org.springframework.data.redis.connection.RedisConnectionFactory' that could not be found.
+	- Bean method 'redisConnectionFactory' not loaded because @ConditionalOnClass did not find required classes 'org.apache.commons.pool2.impl.GenericObjectPool', 'redis.clients.jedis.Jedis'
+	- Bean method 'redisConnectionFactory' not loaded because @ConditionalOnClass did not find required class 'io.lettuce.core.RedisClient'
+
+
+Action:
+
+Consider revisiting the entries above or defining a bean of type 'org.springframework.data.redis.connection.RedisConnectionFactory' in your configuration.
+
+2018-09-29/15:35:39.435||||^_^|[main] INFO  com.tiny.TinyApplication 50 - Starting TinyApplication on K-StudiodeMacBook-Pro.local with PID 1590 (/Users/admin/IdeaProjects/tiny/target/classes started by admin in /Users/admin/IdeaProjects/tiny)
+2018-09-29/15:35:39.440||||^_^|[main] INFO  com.tiny.TinyApplication 680 - No active profile set, falling back to default profiles: default
+2018-09-29/15:35:39.513||||^_^|[main] INFO  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext 590 - Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@52e6fdee: startup date [Sat Sep 29 15:35:39 CST 2018]; root of context hierarchy
+2018-09-29/15:35:40.164||||^_^|[main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner 166 - No MyBatis mapper was found in '[com.tiny]' package. Please check your configuration.
+2018-09-29/15:35:40.441||||^_^|[main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker 326 - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$b09e703e] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-09-29/15:35:40.901||||^_^|[main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer 91 - Tomcat initialized with port(s): 8080 (http)
+2018-09-29/15:35:40.920||||^_^|[main] INFO  org.apache.coyote.http11.Http11NioProtocol 180 - Initializing ProtocolHandler ["http-nio-8080"]
+2018-09-29/15:35:40.930||||^_^|[main] INFO  org.apache.catalina.core.StandardService 180 - Starting service [Tomcat]
+2018-09-29/15:35:40.930||||^_^|[main] INFO  org.apache.catalina.core.StandardEngine 180 - Starting Servlet Engine: Apache Tomcat/8.5.34
+2018-09-29/15:35:40.933||||^_^|[localhost-startStop-1] INFO  org.apache.catalina.core.AprLifecycleListener 180 - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [/Users/admin/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.]
+2018-09-29/15:35:41.028||||^_^|[localhost-startStop-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] 180 - Initializing Spring embedded WebApplicationContext
+2018-09-29/15:35:41.028||||^_^|[localhost-startStop-1] INFO  org.springframework.web.context.ContextLoader 285 - Root WebApplicationContext: initialization completed in 1515 ms
+2018-09-29/15:35:41.090||||^_^|[localhost-startStop-1] INFO  o.s.boot.web.servlet.ServletRegistrationBean 187 - Servlet dispatcherServlet mapped to [/]
+2018-09-29/15:35:41.094||||^_^|[localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean 245 - Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-09-29/15:35:41.094||||^_^|[localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean 245 - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-09-29/15:35:41.094||||^_^|[localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean 245 - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-09-29/15:35:41.094||||^_^|[localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean 245 - Mapping filter: 'requestContextFilter' to: [/*]
+2018-09-29/15:35:41.129||||^_^|[main] WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext 558 - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'redisTemplate' defined in class path resource [org/springframework/boot/autoconfigure/data/redis/RedisAutoConfiguration.class]: Unsatisfied dependency expressed through method 'redisTemplate' parameter 0; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'org.springframework.data.redis.connection.RedisConnectionFactory' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {}
+2018-09-29/15:35:41.130||||^_^|[main] INFO  org.apache.catalina.core.StandardService 180 - Stopping service [Tomcat]
+2018-09-29/15:35:41.140||||^_^|[localhost-startStop-1] WARN  org.apache.catalina.loader.WebappClassLoaderBase 180 - The web application [ROOT] appears to have started a thread named [Abandoned connection cleanup thread] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.lang.Object.wait(Native Method)
+ java.lang.ref.ReferenceQueue.remove(ReferenceQueue.java:143)
+ com.mysql.jdbc.AbandonedConnectionCleanupThread.run(AbandonedConnectionCleanupThread.java:43)
+2018-09-29/15:35:41.148||||^_^|[main] INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener 101 - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2018-09-29/15:35:41.232||||^_^|[main] ERROR o.s.b.diagnostics.LoggingFailureAnalysisReporter 42 - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Parameter 0 of method redisTemplate in org.springframework.boot.autoconfigure.data.redis.RedisAutoConfiguration required a bean of type 'org.springframework.data.redis.connection.RedisConnectionFactory' that could not be found.
+	- Bean method 'redisConnectionFactory' not loaded because @ConditionalOnClass did not find required classes 'org.apache.commons.pool2.impl.GenericObjectPool', 'redis.clients.jedis.Jedis'
+	- Bean method 'redisConnectionFactory' not loaded because @ConditionalOnClass did not find required class 'io.lettuce.core.RedisClient'
+
+
+Action:
+
+Consider revisiting the entries above or defining a bean of type 'org.springframework.data.redis.connection.RedisConnectionFactory' in your configuration.
+
+2018-09-29/15:35:53.751||||^_^|[main] INFO  com.tiny.TinyApplication 50 - Starting TinyApplication on K-StudiodeMacBook-Pro.local with PID 1593 (/Users/admin/IdeaProjects/tiny/target/classes started by admin in /Users/admin/IdeaProjects/tiny)
+2018-09-29/15:35:53.766||||^_^|[main] INFO  com.tiny.TinyApplication 680 - No active profile set, falling back to default profiles: default
+2018-09-29/15:35:53.814||||^_^|[main] INFO  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext 590 - Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@4fad9bb2: startup date [Sat Sep 29 15:35:53 CST 2018]; root of context hierarchy
+2018-09-29/15:35:54.423||||^_^|[main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner 166 - No MyBatis mapper was found in '[com.tiny]' package. Please check your configuration.
+2018-09-29/15:35:54.751||||^_^|[main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker 326 - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$4e350b63] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-09-29/15:35:55.069||||^_^|[main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer 91 - Tomcat initialized with port(s): 8080 (http)
+2018-09-29/15:35:55.081||||^_^|[main] INFO  org.apache.coyote.http11.Http11NioProtocol 180 - Initializing ProtocolHandler ["http-nio-8080"]
+2018-09-29/15:35:55.089||||^_^|[main] INFO  org.apache.catalina.core.StandardService 180 - Starting service [Tomcat]
+2018-09-29/15:35:55.089||||^_^|[main] INFO  org.apache.catalina.core.StandardEngine 180 - Starting Servlet Engine: Apache Tomcat/8.5.34
+2018-09-29/15:35:55.093||||^_^|[localhost-startStop-1] INFO  org.apache.catalina.core.AprLifecycleListener 180 - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [/Users/admin/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.]
+2018-09-29/15:35:55.160||||^_^|[localhost-startStop-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] 180 - Initializing Spring embedded WebApplicationContext
+2018-09-29/15:35:55.160||||^_^|[localhost-startStop-1] INFO  org.springframework.web.context.ContextLoader 285 - Root WebApplicationContext: initialization completed in 1346 ms
+2018-09-29/15:35:55.217||||^_^|[localhost-startStop-1] INFO  o.s.boot.web.servlet.ServletRegistrationBean 187 - Servlet dispatcherServlet mapped to [/]
+2018-09-29/15:35:55.223||||^_^|[localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean 245 - Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-09-29/15:35:55.223||||^_^|[localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean 245 - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-09-29/15:35:55.223||||^_^|[localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean 245 - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-09-29/15:35:55.223||||^_^|[localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean 245 - Mapping filter: 'requestContextFilter' to: [/*]
+2018-09-29/15:35:55.257||||^_^|[main] WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext 558 - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'redisTemplate' defined in class path resource [org/springframework/boot/autoconfigure/data/redis/RedisAutoConfiguration.class]: Unsatisfied dependency expressed through method 'redisTemplate' parameter 0; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'org.springframework.data.redis.connection.RedisConnectionFactory' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {}
+2018-09-29/15:35:55.261||||^_^|[main] INFO  org.apache.catalina.core.StandardService 180 - Stopping service [Tomcat]
+2018-09-29/15:35:55.269||||^_^|[localhost-startStop-1] WARN  org.apache.catalina.loader.WebappClassLoaderBase 180 - The web application [ROOT] appears to have started a thread named [Abandoned connection cleanup thread] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.lang.Object.wait(Native Method)
+ java.lang.ref.ReferenceQueue.remove(ReferenceQueue.java:143)
+ com.mysql.jdbc.AbandonedConnectionCleanupThread.run(AbandonedConnectionCleanupThread.java:43)
+2018-09-29/15:35:55.293||||^_^|[main] INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener 101 - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2018-09-29/15:35:55.408||||^_^|[main] ERROR o.s.b.diagnostics.LoggingFailureAnalysisReporter 42 - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Parameter 0 of method redisTemplate in org.springframework.boot.autoconfigure.data.redis.RedisAutoConfiguration required a bean of type 'org.springframework.data.redis.connection.RedisConnectionFactory' that could not be found.
+	- Bean method 'redisConnectionFactory' not loaded because @ConditionalOnClass did not find required classes 'org.apache.commons.pool2.impl.GenericObjectPool', 'redis.clients.jedis.Jedis'
+	- Bean method 'redisConnectionFactory' not loaded because @ConditionalOnClass did not find required class 'io.lettuce.core.RedisClient'
+
+
+Action:
+
+Consider revisiting the entries above or defining a bean of type 'org.springframework.data.redis.connection.RedisConnectionFactory' in your configuration.
+
+2018-09-29/17:49:07.903||||^_^|[main] INFO  com.tiny.TinyApplication 50 - Starting TinyApplication on K-StudiodeMacBook-Pro.local with PID 4512 (/Users/admin/IdeaProjects/tiny/target/classes started by admin in /Users/admin/IdeaProjects/tiny)
+2018-09-29/17:49:07.907||||^_^|[main] INFO  com.tiny.TinyApplication 680 - No active profile set, falling back to default profiles: default
+2018-09-29/17:49:08.062||||^_^|[main] INFO  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext 590 - Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@14dd9eb7: startup date [Sat Sep 29 17:49:08 CST 2018]; root of context hierarchy
+2018-09-29/17:49:09.216||||^_^|[main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner 166 - No MyBatis mapper was found in '[com.tiny]' package. Please check your configuration.
+2018-09-29/17:49:09.486||||^_^|[main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker 326 - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$e24f3dc6] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-09-29/17:49:09.993||||^_^|[main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer 91 - Tomcat initialized with port(s): 8080 (http)
+2018-09-29/17:49:10.010||||^_^|[main] INFO  org.apache.coyote.http11.Http11NioProtocol 180 - Initializing ProtocolHandler ["http-nio-8080"]
+2018-09-29/17:49:10.020||||^_^|[main] INFO  org.apache.catalina.core.StandardService 180 - Starting service [Tomcat]
+2018-09-29/17:49:10.020||||^_^|[main] INFO  org.apache.catalina.core.StandardEngine 180 - Starting Servlet Engine: Apache Tomcat/8.5.34
+2018-09-29/17:49:10.024||||^_^|[localhost-startStop-1] INFO  org.apache.catalina.core.AprLifecycleListener 180 - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [/Users/admin/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.]
+2018-09-29/17:49:10.121||||^_^|[localhost-startStop-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] 180 - Initializing Spring embedded WebApplicationContext
+2018-09-29/17:49:10.121||||^_^|[localhost-startStop-1] INFO  org.springframework.web.context.ContextLoader 285 - Root WebApplicationContext: initialization completed in 2059 ms
+2018-09-29/17:49:10.165||||^_^|[localhost-startStop-1] INFO  o.s.boot.web.servlet.ServletRegistrationBean 187 - Servlet dispatcherServlet mapped to [/]
+2018-09-29/17:49:10.169||||^_^|[localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean 245 - Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-09-29/17:49:10.169||||^_^|[localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean 245 - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-09-29/17:49:10.170||||^_^|[localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean 245 - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-09-29/17:49:10.170||||^_^|[localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean 245 - Mapping filter: 'requestContextFilter' to: [/*]
+2018-09-29/17:49:10.201||||^_^|[main] WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext 558 - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'redisTemplate' defined in class path resource [org/springframework/boot/autoconfigure/data/redis/RedisAutoConfiguration.class]: Unsatisfied dependency expressed through method 'redisTemplate' parameter 0; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'org.springframework.data.redis.connection.RedisConnectionFactory' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {}
+2018-09-29/17:49:10.203||||^_^|[main] INFO  org.apache.catalina.core.StandardService 180 - Stopping service [Tomcat]
+2018-09-29/17:49:10.211||||^_^|[localhost-startStop-1] WARN  org.apache.catalina.loader.WebappClassLoaderBase 180 - The web application [ROOT] appears to have started a thread named [Abandoned connection cleanup thread] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.lang.Object.wait(Native Method)
+ java.lang.ref.ReferenceQueue.remove(ReferenceQueue.java:143)
+ com.mysql.jdbc.AbandonedConnectionCleanupThread.run(AbandonedConnectionCleanupThread.java:43)
+2018-09-29/17:49:10.219||||^_^|[main] INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener 101 - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2018-09-29/17:49:10.308||||^_^|[main] ERROR o.s.b.diagnostics.LoggingFailureAnalysisReporter 42 - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Parameter 0 of method redisTemplate in org.springframework.boot.autoconfigure.data.redis.RedisAutoConfiguration required a bean of type 'org.springframework.data.redis.connection.RedisConnectionFactory' that could not be found.
+	- Bean method 'redisConnectionFactory' not loaded because @ConditionalOnClass did not find required classes 'org.apache.commons.pool2.impl.GenericObjectPool', 'redis.clients.jedis.Jedis'
+	- Bean method 'redisConnectionFactory' not loaded because @ConditionalOnClass did not find required class 'io.lettuce.core.RedisClient'
+
+
+Action:
+
+Consider revisiting the entries above or defining a bean of type 'org.springframework.data.redis.connection.RedisConnectionFactory' in your configuration.
+
+2018-09-29/17:54:42.066||||^_^|[main] INFO  com.tiny.TinyApplication 50 - Starting TinyApplication on K-StudiodeMacBook-Pro.local with PID 4897 (/Users/admin/IdeaProjects/tiny/target/classes started by admin in /Users/admin/IdeaProjects/tiny)
+2018-09-29/17:54:42.071||||^_^|[main] INFO  com.tiny.TinyApplication 680 - No active profile set, falling back to default profiles: default
+2018-09-29/17:54:42.130||||^_^|[main] INFO  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext 590 - Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@1a451d4d: startup date [Sat Sep 29 17:54:42 CST 2018]; root of context hierarchy
+2018-09-29/17:54:42.873||||^_^|[main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner 166 - No MyBatis mapper was found in '[com.tiny]' package. Please check your configuration.
+2018-09-29/17:54:43.141||||^_^|[main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker 326 - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$a14a5439] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-09-29/17:54:43.589||||^_^|[main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer 91 - Tomcat initialized with port(s): 8080 (http)
+2018-09-29/17:54:43.611||||^_^|[main] INFO  org.apache.coyote.http11.Http11NioProtocol 180 - Initializing ProtocolHandler ["http-nio-8080"]
+2018-09-29/17:54:43.621||||^_^|[main] INFO  org.apache.catalina.core.StandardService 180 - Starting service [Tomcat]
+2018-09-29/17:54:43.622||||^_^|[main] INFO  org.apache.catalina.core.StandardEngine 180 - Starting Servlet Engine: Apache Tomcat/8.5.34
+2018-09-29/17:54:43.625||||^_^|[localhost-startStop-1] INFO  org.apache.catalina.core.AprLifecycleListener 180 - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [/Users/admin/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.]
+2018-09-29/17:54:43.724||||^_^|[localhost-startStop-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] 180 - Initializing Spring embedded WebApplicationContext
+2018-09-29/17:54:43.724||||^_^|[localhost-startStop-1] INFO  org.springframework.web.context.ContextLoader 285 - Root WebApplicationContext: initialization completed in 1594 ms
+2018-09-29/17:54:43.767||||^_^|[localhost-startStop-1] INFO  o.s.boot.web.servlet.ServletRegistrationBean 187 - Servlet dispatcherServlet mapped to [/]
+2018-09-29/17:54:43.770||||^_^|[localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean 245 - Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-09-29/17:54:43.771||||^_^|[localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean 245 - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-09-29/17:54:43.771||||^_^|[localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean 245 - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-09-29/17:54:43.771||||^_^|[localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean 245 - Mapping filter: 'requestContextFilter' to: [/*]
+2018-09-29/17:54:43.803||||^_^|[main] WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext 558 - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'redisTemplate' defined in class path resource [org/springframework/boot/autoconfigure/data/redis/RedisAutoConfiguration.class]: Unsatisfied dependency expressed through method 'redisTemplate' parameter 0; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'org.springframework.data.redis.connection.RedisConnectionFactory' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {}
+2018-09-29/17:54:43.805||||^_^|[main] INFO  org.apache.catalina.core.StandardService 180 - Stopping service [Tomcat]
+2018-09-29/17:54:43.816||||^_^|[localhost-startStop-1] WARN  org.apache.catalina.loader.WebappClassLoaderBase 180 - The web application [ROOT] appears to have started a thread named [Abandoned connection cleanup thread] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.lang.Object.wait(Native Method)
+ java.lang.ref.ReferenceQueue.remove(ReferenceQueue.java:143)
+ com.mysql.jdbc.AbandonedConnectionCleanupThread.run(AbandonedConnectionCleanupThread.java:43)
+2018-09-29/17:54:43.823||||^_^|[main] INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener 101 - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2018-09-29/17:54:43.906||||^_^|[main] ERROR o.s.b.diagnostics.LoggingFailureAnalysisReporter 42 - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Parameter 0 of method redisTemplate in org.springframework.boot.autoconfigure.data.redis.RedisAutoConfiguration required a bean of type 'org.springframework.data.redis.connection.RedisConnectionFactory' that could not be found.
+	- Bean method 'redisConnectionFactory' not loaded because @ConditionalOnClass did not find required classes 'org.apache.commons.pool2.impl.GenericObjectPool', 'redis.clients.jedis.Jedis'
+	- Bean method 'redisConnectionFactory' not loaded because @ConditionalOnClass did not find required class 'io.lettuce.core.RedisClient'
+
+
+Action:
+
+Consider revisiting the entries above or defining a bean of type 'org.springframework.data.redis.connection.RedisConnectionFactory' in your configuration.
+
+2018-09-29/18:06:34.404||||^_^|[main] INFO  com.tiny.TinyApplication 50 - Starting TinyApplication on K-StudiodeMacBook-Pro.local with PID 5064 (/Users/admin/IdeaProjects/tiny/target/classes started by admin in /Users/admin/IdeaProjects/tiny)
+2018-09-29/18:06:34.408||||^_^|[main] INFO  com.tiny.TinyApplication 680 - No active profile set, falling back to default profiles: default
+2018-09-29/18:06:34.475||||^_^|[main] INFO  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext 590 - Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@6c80d78a: startup date [Sat Sep 29 18:06:34 CST 2018]; root of context hierarchy
+2018-09-29/18:06:35.090||||^_^|[main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner 166 - No MyBatis mapper was found in '[com.tiny]' package. Please check your configuration.
+2018-09-29/18:06:35.356||||^_^|[main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker 326 - Bean 'redisConfig' of type [com.tiny.common.config.RedisConfig$$EnhancerBySpringCGLIB$$84d936cc] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-09-29/18:06:35.361||||^_^|[main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker 326 - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$b1056ab4] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-09-29/18:06:35.903||||^_^|[main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer 91 - Tomcat initialized with port(s): 8080 (http)
+2018-09-29/18:06:35.919||||^_^|[main] INFO  org.apache.coyote.http11.Http11NioProtocol 180 - Initializing ProtocolHandler ["http-nio-8080"]
+2018-09-29/18:06:35.927||||^_^|[main] INFO  org.apache.catalina.core.StandardService 180 - Starting service [Tomcat]
+2018-09-29/18:06:35.927||||^_^|[main] INFO  org.apache.catalina.core.StandardEngine 180 - Starting Servlet Engine: Apache Tomcat/8.5.34
+2018-09-29/18:06:35.930||||^_^|[localhost-startStop-1] INFO  org.apache.catalina.core.AprLifecycleListener 180 - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [/Users/admin/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.]
+2018-09-29/18:06:36.006||||^_^|[localhost-startStop-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] 180 - Initializing Spring embedded WebApplicationContext
+2018-09-29/18:06:36.006||||^_^|[localhost-startStop-1] INFO  org.springframework.web.context.ContextLoader 285 - Root WebApplicationContext: initialization completed in 1531 ms
+2018-09-29/18:06:36.059||||^_^|[localhost-startStop-1] INFO  o.s.boot.web.servlet.ServletRegistrationBean 187 - Servlet dispatcherServlet mapped to [/]
+2018-09-29/18:06:36.064||||^_^|[localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean 245 - Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-09-29/18:06:36.064||||^_^|[localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean 245 - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-09-29/18:06:36.064||||^_^|[localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean 245 - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-09-29/18:06:36.064||||^_^|[localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean 245 - Mapping filter: 'requestContextFilter' to: [/*]
+2018-09-29/18:06:36.091||||^_^|[main] WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext 558 - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'redisTemplate' defined in class path resource [com/tiny/common/config/RedisConfig.class]: Unsatisfied dependency expressed through method 'redisTemplate' parameter 0; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'org.springframework.data.redis.connection.RedisConnectionFactory' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {}
+2018-09-29/18:06:36.093||||^_^|[main] INFO  org.apache.catalina.core.StandardService 180 - Stopping service [Tomcat]
+2018-09-29/18:06:36.100||||^_^|[localhost-startStop-1] WARN  org.apache.catalina.loader.WebappClassLoaderBase 180 - The web application [ROOT] appears to have started a thread named [Abandoned connection cleanup thread] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.lang.Object.wait(Native Method)
+ java.lang.ref.ReferenceQueue.remove(ReferenceQueue.java:143)
+ com.mysql.jdbc.AbandonedConnectionCleanupThread.run(AbandonedConnectionCleanupThread.java:43)
+2018-09-29/18:06:36.107||||^_^|[main] INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener 101 - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2018-09-29/18:06:36.185||||^_^|[main] ERROR o.s.b.diagnostics.LoggingFailureAnalysisReporter 42 - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Parameter 0 of method redisTemplate in com.tiny.common.config.RedisConfig required a bean of type 'org.springframework.data.redis.connection.RedisConnectionFactory' that could not be found.
+	- Bean method 'redisConnectionFactory' not loaded because @ConditionalOnClass did not find required classes 'org.apache.commons.pool2.impl.GenericObjectPool', 'redis.clients.jedis.Jedis'
+	- Bean method 'redisConnectionFactory' not loaded because @ConditionalOnClass did not find required class 'io.lettuce.core.RedisClient'
+
+
+Action:
+
+Consider revisiting the entries above or defining a bean of type 'org.springframework.data.redis.connection.RedisConnectionFactory' in your configuration.
+
+2018-09-29/18:07:07.307||||^_^|[main] INFO  com.tiny.TinyApplication 50 - Starting TinyApplication on K-StudiodeMacBook-Pro.local with PID 5081 (/Users/admin/IdeaProjects/tiny/target/classes started by admin in /Users/admin/IdeaProjects/tiny)
+2018-09-29/18:07:07.311||||^_^|[main] INFO  com.tiny.TinyApplication 680 - No active profile set, falling back to default profiles: default
+2018-09-29/18:07:07.391||||^_^|[main] INFO  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext 590 - Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@44ebcd03: startup date [Sat Sep 29 18:07:07 CST 2018]; root of context hierarchy
+2018-09-29/18:07:07.943||||^_^|[main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner 166 - No MyBatis mapper was found in '[com.tiny]' package. Please check your configuration.
+2018-09-29/18:07:08.186||||^_^|[main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker 326 - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$5671bf1] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-09-29/18:07:08.460||||^_^|[main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer 91 - Tomcat initialized with port(s): 8080 (http)
+2018-09-29/18:07:08.473||||^_^|[main] INFO  org.apache.coyote.http11.Http11NioProtocol 180 - Initializing ProtocolHandler ["http-nio-8080"]
+2018-09-29/18:07:08.480||||^_^|[main] INFO  org.apache.catalina.core.StandardService 180 - Starting service [Tomcat]
+2018-09-29/18:07:08.481||||^_^|[main] INFO  org.apache.catalina.core.StandardEngine 180 - Starting Servlet Engine: Apache Tomcat/8.5.34
+2018-09-29/18:07:08.483||||^_^|[localhost-startStop-1] INFO  org.apache.catalina.core.AprLifecycleListener 180 - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [/Users/admin/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.]
+2018-09-29/18:07:08.538||||^_^|[localhost-startStop-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] 180 - Initializing Spring embedded WebApplicationContext
+2018-09-29/18:07:08.538||||^_^|[localhost-startStop-1] INFO  org.springframework.web.context.ContextLoader 285 - Root WebApplicationContext: initialization completed in 1147 ms
+2018-09-29/18:07:08.581||||^_^|[localhost-startStop-1] INFO  o.s.boot.web.servlet.ServletRegistrationBean 187 - Servlet dispatcherServlet mapped to [/]
+2018-09-29/18:07:08.584||||^_^|[localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean 245 - Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-09-29/18:07:08.585||||^_^|[localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean 245 - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-09-29/18:07:08.585||||^_^|[localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean 245 - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-09-29/18:07:08.585||||^_^|[localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean 245 - Mapping filter: 'requestContextFilter' to: [/*]
+2018-09-29/18:07:08.611||||^_^|[main] WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext 558 - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'adminUserController': Unsatisfied dependency expressed through field 'adminUserService'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'adminUserService': Unsatisfied dependency expressed through field 'adminUserDao'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'adminUserDao': Unsatisfied dependency expressed through field 'adminUserMapper'; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'com.tiny.mapper.AdminUserMapper' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+2018-09-29/18:07:08.613||||^_^|[main] INFO  org.apache.catalina.core.StandardService 180 - Stopping service [Tomcat]
+2018-09-29/18:07:08.619||||^_^|[localhost-startStop-1] WARN  org.apache.catalina.loader.WebappClassLoaderBase 180 - The web application [ROOT] appears to have started a thread named [Abandoned connection cleanup thread] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.lang.Object.wait(Native Method)
+ java.lang.ref.ReferenceQueue.remove(ReferenceQueue.java:143)
+ com.mysql.jdbc.AbandonedConnectionCleanupThread.run(AbandonedConnectionCleanupThread.java:43)
+2018-09-29/18:07:08.626||||^_^|[main] INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener 101 - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2018-09-29/18:07:08.689||||^_^|[main] ERROR o.s.b.diagnostics.LoggingFailureAnalysisReporter 42 - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Field adminUserMapper in com.tiny.dao.AdminUserDao required a bean of type 'com.tiny.mapper.AdminUserMapper' that could not be found.
+
+
+Action:
+
+Consider defining a bean of type 'com.tiny.mapper.AdminUserMapper' in your configuration.
+
+2018-09-29/18:08:20.198||||^_^|[main] INFO  com.tiny.TinyApplication 50 - Starting TinyApplication on K-StudiodeMacBook-Pro.local with PID 5109 (/Users/admin/IdeaProjects/tiny/target/classes started by admin in /Users/admin/IdeaProjects/tiny)
+2018-09-29/18:08:20.207||||^_^|[main] INFO  com.tiny.TinyApplication 680 - No active profile set, falling back to default profiles: default
+2018-09-29/18:08:20.280||||^_^|[main] INFO  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext 590 - Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@14dd9eb7: startup date [Sat Sep 29 18:08:20 CST 2018]; root of context hierarchy
+2018-09-29/18:08:21.067||||^_^|[main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner 166 - No MyBatis mapper was found in '[com.tiny]' package. Please check your configuration.
+2018-09-29/18:08:21.314||||^_^|[main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker 326 - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$ea239f15] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-09-29/18:08:21.591||||^_^|[main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer 91 - Tomcat initialized with port(s): 8080 (http)
+2018-09-29/18:08:21.603||||^_^|[main] INFO  org.apache.coyote.http11.Http11NioProtocol 180 - Initializing ProtocolHandler ["http-nio-8080"]
+2018-09-29/18:08:21.611||||^_^|[main] INFO  org.apache.catalina.core.StandardService 180 - Starting service [Tomcat]
+2018-09-29/18:08:21.611||||^_^|[main] INFO  org.apache.catalina.core.StandardEngine 180 - Starting Servlet Engine: Apache Tomcat/8.5.34
+2018-09-29/18:08:21.614||||^_^|[localhost-startStop-1] INFO  org.apache.catalina.core.AprLifecycleListener 180 - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [/Users/admin/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.]
+2018-09-29/18:08:21.668||||^_^|[localhost-startStop-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] 180 - Initializing Spring embedded WebApplicationContext
+2018-09-29/18:08:21.669||||^_^|[localhost-startStop-1] INFO  org.springframework.web.context.ContextLoader 285 - Root WebApplicationContext: initialization completed in 1389 ms
+2018-09-29/18:08:21.711||||^_^|[localhost-startStop-1] INFO  o.s.boot.web.servlet.ServletRegistrationBean 187 - Servlet dispatcherServlet mapped to [/]
+2018-09-29/18:08:21.715||||^_^|[localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean 245 - Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-09-29/18:08:21.716||||^_^|[localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean 245 - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-09-29/18:08:21.716||||^_^|[localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean 245 - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-09-29/18:08:21.716||||^_^|[localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean 245 - Mapping filter: 'requestContextFilter' to: [/*]
+2018-09-29/18:08:21.743||||^_^|[main] WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext 558 - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'adminUserController': Unsatisfied dependency expressed through field 'adminUserService'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'adminUserService': Unsatisfied dependency expressed through field 'adminUserDao'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'adminUserDao': Injection of resource dependencies failed; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'com.tiny.mapper.AdminUserMapper' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@javax.annotation.Resource(shareable=true, lookup=, name=, description=, authenticationType=CONTAINER, type=class java.lang.Object, mappedName=)}
+2018-09-29/18:08:21.745||||^_^|[main] INFO  org.apache.catalina.core.StandardService 180 - Stopping service [Tomcat]
+2018-09-29/18:08:21.750||||^_^|[localhost-startStop-1] WARN  org.apache.catalina.loader.WebappClassLoaderBase 180 - The web application [ROOT] appears to have started a thread named [Abandoned connection cleanup thread] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.lang.Object.wait(Native Method)
+ java.lang.ref.ReferenceQueue.remove(ReferenceQueue.java:143)
+ com.mysql.jdbc.AbandonedConnectionCleanupThread.run(AbandonedConnectionCleanupThread.java:43)
+2018-09-29/18:08:21.757||||^_^|[main] INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener 101 - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2018-09-29/18:08:21.833||||^_^|[main] ERROR o.s.b.diagnostics.LoggingFailureAnalysisReporter 42 - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Field adminUserDao in com.tiny.service.AdminUserService required a bean of type 'com.tiny.mapper.AdminUserMapper' that could not be found.
+
+
+Action:
+
+Consider defining a bean of type 'com.tiny.mapper.AdminUserMapper' in your configuration.
+
+2018-09-29/18:19:52.366||||^_^|[main] INFO  com.tiny.TinyApplication 50 - Starting TinyApplication on K-StudiodeMacBook-Pro.local with PID 5333 (/Users/admin/IdeaProjects/tiny/target/classes started by admin in /Users/admin/IdeaProjects/tiny)
+2018-09-29/18:19:52.371||||^_^|[main] INFO  com.tiny.TinyApplication 680 - No active profile set, falling back to default profiles: default
+2018-09-29/18:19:52.414||||^_^|[main] INFO  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext 590 - Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@62150f9e: startup date [Sat Sep 29 18:19:52 CST 2018]; root of context hierarchy
+2018-09-29/18:19:53.026||||^_^|[main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner 166 - No MyBatis mapper was found in '[com.tiny]' package. Please check your configuration.
+2018-09-29/18:19:53.296||||^_^|[main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker 326 - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$2389421] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-09-29/18:19:53.655||||^_^|[main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer 91 - Tomcat initialized with port(s): 8080 (http)
+2018-09-29/18:19:53.669||||^_^|[main] INFO  org.apache.coyote.http11.Http11NioProtocol 180 - Initializing ProtocolHandler ["http-nio-8080"]
+2018-09-29/18:19:53.688||||^_^|[main] INFO  org.apache.catalina.core.StandardService 180 - Starting service [Tomcat]
+2018-09-29/18:19:53.689||||^_^|[main] INFO  org.apache.catalina.core.StandardEngine 180 - Starting Servlet Engine: Apache Tomcat/8.5.34
+2018-09-29/18:19:53.692||||^_^|[localhost-startStop-1] INFO  org.apache.catalina.core.AprLifecycleListener 180 - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [/Users/admin/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.]
+2018-09-29/18:19:53.754||||^_^|[localhost-startStop-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] 180 - Initializing Spring embedded WebApplicationContext
+2018-09-29/18:19:53.755||||^_^|[localhost-startStop-1] INFO  org.springframework.web.context.ContextLoader 285 - Root WebApplicationContext: initialization completed in 1341 ms
+2018-09-29/18:19:53.794||||^_^|[localhost-startStop-1] INFO  o.s.boot.web.servlet.ServletRegistrationBean 187 - Servlet dispatcherServlet mapped to [/]
+2018-09-29/18:19:53.797||||^_^|[localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean 245 - Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-09-29/18:19:53.798||||^_^|[localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean 245 - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-09-29/18:19:53.798||||^_^|[localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean 245 - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-09-29/18:19:53.798||||^_^|[localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean 245 - Mapping filter: 'requestContextFilter' to: [/*]
+2018-09-29/18:19:53.830||||^_^|[main] WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext 558 - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'adminUserController': Unsatisfied dependency expressed through field 'adminUserService'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'adminUserService': Unsatisfied dependency expressed through field 'adminUserDao'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'adminUserDao': Injection of resource dependencies failed; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'com.tiny.mapper.AdminUserMapper' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@javax.annotation.Resource(shareable=true, lookup=, name=, description=, authenticationType=CONTAINER, type=class java.lang.Object, mappedName=)}
+2018-09-29/18:19:53.832||||^_^|[main] INFO  org.apache.catalina.core.StandardService 180 - Stopping service [Tomcat]
+2018-09-29/18:19:53.840||||^_^|[localhost-startStop-1] WARN  org.apache.catalina.loader.WebappClassLoaderBase 180 - The web application [ROOT] appears to have started a thread named [Abandoned connection cleanup thread] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.lang.Object.wait(Native Method)
+ java.lang.ref.ReferenceQueue.remove(ReferenceQueue.java:143)
+ com.mysql.jdbc.AbandonedConnectionCleanupThread.run(AbandonedConnectionCleanupThread.java:43)
+2018-09-29/18:19:53.848||||^_^|[main] INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener 101 - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2018-09-29/18:19:53.925||||^_^|[main] ERROR o.s.b.diagnostics.LoggingFailureAnalysisReporter 42 - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Field adminUserDao in com.tiny.service.AdminUserService required a bean of type 'com.tiny.mapper.AdminUserMapper' that could not be found.
+
+
+Action:
+
+Consider defining a bean of type 'com.tiny.mapper.AdminUserMapper' in your configuration.
+

@@ -25,7 +25,7 @@
 
         <!--mybatis 版本配置-->
         <mybatis-spring-boot>1.2.0</mybatis-spring-boot>
-        <mysql-connector>5.1.39</mysql-connector>
+        <mysql-connector>8.0.11</mysql-connector>
 	</properties>
 
 
@@ -79,16 +79,34 @@
             <artifactId>mysql-connector-java</artifactId>
             <version>${mysql-connector}</version>
         </dependency>
+
+
         <dependency>
             <groupId>com.google.collections</groupId>
             <artifactId>google-collections</artifactId>
             <version>1.0</version>
         </dependency>
+        <!--<dependency>-->
+            <!--<groupId>org.springframework.data</groupId>-->
+            <!--<artifactId>spring-data-redis</artifactId>-->
+            <!--<version>1.8.8.RELEASE</version>-->
+        <!--</dependency>-->
+
         <dependency>
-            <groupId>org.springframework.data</groupId>
-            <artifactId>spring-data-redis</artifactId>
-            <version>1.8.8.RELEASE</version>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-data-redis</artifactId>
+            <exclusions>
+                <exclusion>
+                    <groupId>io.lettuce</groupId>
+                    <artifactId>lettuce-core</artifactId>
+                </exclusion>
+            </exclusions>
         </dependency>
+        <dependency>
+            <groupId>redis.clients</groupId>
+            <artifactId>jedis</artifactId>
+        </dependency>
+
     </dependencies>
 
 	<build>
