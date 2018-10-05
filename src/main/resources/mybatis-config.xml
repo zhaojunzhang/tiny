@@ -43,18 +43,4 @@
     </settings>
 
 
-
-
-
-
-    <plugins>
-        <plugin
-                interceptor="com.vipkid.teacher.common.paginator.interceptor.OffsetLimitInterceptor">
-            <property name="dialect"
-                      value="com.vipkid.teacher.common.paginator.dialect.db.MySqlDialect"/>
-        </plugin>
-
-    </plugins>
-
-
 </configuration>

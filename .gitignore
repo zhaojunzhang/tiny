@@ -25,3 +25,5 @@
 /nbdist/
 /.nb-gradle/
 /.mvn/
+/logs/
+/.idea/
